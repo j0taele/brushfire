@@ -78,6 +78,7 @@
       <!-- LIST OF VIDEOS -->
       <section class="the-list-of-videos col-md-12">
         <div class="loading" ng-if="videosLoading">Loading videos...</div>
+        <div ng-if="!videosLoading && videos.length===0">Aquí no hay videos señores, añade uno picha </div>
         <ul>
           <li class="video" ng-repeat="video in videos" ng-if="!videosLoading">
             <h2>{{video.title}}</h2>

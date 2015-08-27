@@ -44,4 +44,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+'GET /listAll': 'VideoController.find'
+
 };
